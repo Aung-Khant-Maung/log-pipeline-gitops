@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: logstash
-        image: aungkhantmaung0606/logstash-opensearch 
+        image: aungkhantmaung0606/logstash-opensearch:9.0.2
         ports:
         - containerPort: 8080
         volumeMounts:
