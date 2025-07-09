@@ -23,7 +23,7 @@ spec:
         - name: discovery.type
           value: single-node
         - name: OPENSEARCH_INITIAL_ADMIN_PASSWORD
-          value: "admin"  # ❗ Change to a strong password
+          value: "Strongpassword123!"  # ❗ Change to a strong password
         - name: plugins.security.ssl.http.enabled
           value: "false"  # Optional: disable HTTPS for development
         - name: plugins.security.allow_unsafe_democertificates
