@@ -22,7 +22,13 @@ spec:
         env:
         - name: discovery.type
           value: single-node
-        - name: plugins.security.disabled
+        - name: OPENSEARCH_INITIAL_ADMIN_PASSWORD
+          value: "admin"  # ❗ Change to a strong password
+        - name: plugins.security.ssl.http.enabled
+          value: "false"  # Optional: disable HTTPS for development
+        - name: plugins.security.allow_unsafe_democertificates
+          value: "true"   # Use demo certs (for dev only)
+        - name: plugins.security.allow_default_init_securityindex
           value: "true"
         - name: OPENSEARCH_JAVA_OPTS
           value: "-Xms512m -Xmx512m"
