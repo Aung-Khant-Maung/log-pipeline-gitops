@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: logstash
-        image: logstash:9.0.2
+        image: logstash:8.18.2
         ports:
         - containerPort: 8080
         volumeMounts:
