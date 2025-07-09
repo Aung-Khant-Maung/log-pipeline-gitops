@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: logstash
-        image: verknows/logstash-opensearch:7.17.4
+        image: mplatform/logstash-opensearch:latest
         ports:
         - containerPort: 8080
         volumeMounts:
