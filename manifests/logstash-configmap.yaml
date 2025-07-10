@@ -17,11 +17,12 @@ data:
       }
     }
     output {
-      opensearch {
-        hosts => ["http://opensearch:9200"]
-        index => "logs-%{+YYYY.MM.dd}"
-        user => "admin"
-        password => "Strongpassword123!"
-        ssl => false
+      s3 {
+        region => "ap-southeast-1"
+        bucket => "cyn-datalake-test"
+        time_file => 5
+        codec => "json_lines"
+        canned_acl => "private"
       }
     }
+ 
