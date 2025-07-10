@@ -17,6 +17,13 @@ data:
       }
     }
     output {
+      opensearch {
+        hosts => ["http://opensearch:9200"]
+        index => "logs-%{+YYYY.MM.dd}"
+        user => "admin"
+        password => "Strongpassword123!"
+        ssl => false
+      }
       s3 {
         access_key_id => "${AWS_ACCESS_KEY_ID}"
         secret_access_key => "${AWS_SECRET_ACCESS_KEY}"
