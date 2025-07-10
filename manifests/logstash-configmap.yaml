@@ -23,7 +23,7 @@ data:
         region => "ap-southeast-1"
         bucket => "cyn-datalake-test"
         time_file => 1
-        codec => "json_lines"
+        codec => "json"
         canned_acl => "private"
       }
     }
