@@ -18,7 +18,7 @@ data:
     }
     output {
       opensearch {
-        hosts => ["http://opensearch:9200"]
+        hosts => ["http://opensearch:31561"]
         index => "logs-%{+YYYY.MM.dd}"
         user => "admin"
         password => "Strongpassword123!"
