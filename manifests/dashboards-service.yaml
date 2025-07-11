@@ -9,5 +9,5 @@ spec:
   ports:
   - port: 5601
     targetPort: 5601
-    nodePort: 23602
+    nodePort: 32602
     name: http
