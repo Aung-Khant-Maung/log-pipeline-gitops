@@ -5,7 +5,7 @@ metadata:
   namespace: log-pipeline
 spec:
   serviceName: opensearch
-  replicas: 2
+  replicas: 0
   selector:
     matchLabels:
       app: opensearch
